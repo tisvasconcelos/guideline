@@ -1,0 +1,46 @@
+@import "settings/settings";
+
+@font-face {
+	font-family: 'museo_sans';
+	src:
+    url("/assets/fonts/#{map-get($fonts100, eot)}");
+	src:
+    url("/assets/fonts/#{map-get($fonts100, eot)}?#iefix") format('embedded-opentype'),
+    url("/assets/fonts/#{map-get($fonts100, woff2)}") format('woff2'),
+		url("/assets/fonts/#{map-get($fonts100, woff)}") format('woff'),
+		url("/assets/fonts/#{map-get($fonts100, ttf)}") format('truetype'),
+		url("/assets/fonts/#{map-get($fonts100, svg)}#museo_sans100") format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'museo_sans';
+	src:
+    url("/assets/fonts/#{map-get($fonts300, eot)}");
+	src:
+    url("/assets/fonts/#{map-get($fonts300, eot)}?#iefix") format('embedded-opentype'),
+    url("/assets/fonts/#{map-get($fonts300, woff2)}") format('woff2'),
+		url("/assets/fonts/#{map-get($fonts300, woff)}") format('woff'),
+		url("/assets/fonts/#{map-get($fonts300, ttf)}") format('truetype'),
+		url("/assets/fonts/#{map-get($fonts300, svg)}#museo_sans300") format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'museo_sans';
+	src:
+    url("/assets/fonts/#{map-get($fonts500, eot)}");
+	src:
+    url("/assets/fonts/#{map-get($fonts500, eot)}?#iefix") format('embedded-opentype'),
+    url("/assets/fonts/#{map-get($fonts500, woff2)}") format('woff2'),
+		url("/assets/fonts/#{map-get($fonts500, woff)}") format('woff'),
+		url("/assets/fonts/#{map-get($fonts500, ttf)}") format('truetype'),
+		url("/assets/fonts/#{map-get($fonts500, svg)}#museo_sans500") format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}

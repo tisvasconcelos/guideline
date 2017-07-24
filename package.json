@@ -1,0 +1,26 @@
+{
+  "name": "guideline",
+  "version": "1.0.0",
+  "description": "Elo7 guideline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "./node_modules/.bin/node-sass assets/sass/ -r --include-path assets/sass/ --output-style compressed --source-map true -o assets/css",
+    "watch:css": "nodemon -e scss --exec 'npm run build:css'",
+    "dev": "parallelshell 'npm run watch:css'"
+  },
+  "keywords": [
+    "elo7",
+    "css",
+    "layout",
+    "guideline"
+  ],
+  "dependencies": {
+    "node-sass": "4.5.3"
+  },
+  "devDependencies": {
+    "parallelshell": "3.0.1"
+  },
+  "author": "elo7",
+  "license": "ISC"
+}

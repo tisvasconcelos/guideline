@@ -1,0 +1,169 @@
+@import "settings/settings";
+@import "generic/generic";
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: map-get($heading, h1);
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: map-get($heading, h2);
+  font-size: 1.4rem;
+}
+
+h3 {
+  color: map-get($heading, h3);
+  font-size: 1.3rem;
+}
+
+h4 {
+  color: map-get($heading, h4);
+  font-size: 1.2rem;
+}
+
+h5 {
+  color: map-get($heading, h5);
+  font-size: 1.1rem;
+}
+
+h6 {
+  color: map-get($heading, h6);
+  font-size: 1rem;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: map-get($links, color);
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  background-color: map-get($buttons-default, background);
+  border: solid 1px map-get($buttons-default, border);
+  color: map-get($buttons-default, color);
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 1rem;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color:map-get($buttons-default, hover);
+  }
+
+  &[disabled], &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover, &:focus {
+      background-color:map-get($buttons-default, background);
+    }
+  }
+
+  &.small {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  &.large {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  &.primary {
+    background-color: map-get($buttons-primary, background);
+    border: solid 1px map-get($buttons-primary, border);
+    color: map-get($buttons-primary, color);
+
+    &:hover, &:focus {
+      background-color: map-get($buttons-primary, hover);
+    }
+
+    &[disabled], &.disabled {
+      &:hover, &:focus {
+        background-color: map-get($buttons-primary, background);
+      }
+    }
+  }
+
+  &.link {
+    color: map-get($links, color);
+    background-color: transparent;
+    border: 0 none;
+    padding: 0;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+label {
+  color: map-get($label, color);
+  font-size: 1rem;
+
+  span {
+    width: 200px;
+    display: inline-block;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+
+    &.full {
+      width: 100%;
+    }
+
+    &.right {
+      text-align: right;
+    }
+  }
+}
+
+.input, textarea, select {
+  color: map-get($input, color);
+  border: solid 1px map-get($input, border);
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.438rem;
+  vertical-align: middle;
+  width: 200px;
+
+  &.full {
+    width: 100%;
+  }
+
+  &.small {
+    width: 100px;
+  }
+
+  &.large {
+    width: 300px;
+  }
+}

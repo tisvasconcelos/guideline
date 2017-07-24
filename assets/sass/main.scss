@@ -1,0 +1,76 @@
+@import "_layout";
+
+body {
+  font-size: 16px;
+  font-family: "museo_sans", sans-serif;
+}
+
+.wrapper {
+  max-width: 1280px;
+  min-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main, .navigation {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main {
+  width: 78%;
+  padding: 2em 0;
+  margin-left: 22%;
+
+  section {
+    margin-bottom: 2em;
+  }
+
+  .example {
+    border: solid 1px #bcbab7;
+    border-radius: 4px 4px 0 0;
+    padding: 1em;
+  }
+
+  .how-to-use {
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+    background-color: #f8f8f8;
+    border: solid 1px #bcbab7;
+    border-top: 0 none;
+    border-radius: 0 0 4px 4px;
+    padding: 1em;
+
+    code {
+      display: inline-block;
+      color: #7d7873;
+      vertical-align: top;
+
+      p {
+        margin: 0.4em 0;
+      }
+    }
+  }
+}
+
+.navigation {
+  width: 20%;
+  margin-top: 1em;
+  font-size: 0.9rem;
+  position: fixed;
+
+  nav{
+    > nav {
+     margin-left: 1em;
+     > nav {
+      margin-left: 2em;
+    }
+   }
+  }
+
+  a {
+    display: block;
+    margin-top: 1em;
+  }
+}
