@@ -126,23 +126,35 @@ a {
   }
 }
 
+@mixin dimensions {
+  &.full {
+    width: 100%;
+  }
+
+  &.small {
+    width: 100px;
+  }
+
+  &.large {
+    width: 300px;
+  }
+
+  &.right {
+    text-align: right;
+  }
+}
+
 label {
   color: map-get($label, color);
   font-size: 1rem;
 
-  span {
+  > span {
     width: 200px;
     display: inline-block;
     margin-right: 0.8rem;
     margin-bottom: 0.8rem;
 
-    &.full {
-      width: 100%;
-    }
-
-    &.right {
-      text-align: right;
-    }
+    @include dimensions;
   }
 }
 
@@ -155,15 +167,15 @@ label {
   vertical-align: middle;
   width: 200px;
 
-  &.full {
-    width: 100%;
-  }
+  @include dimensions;
+}
 
-  &.small {
-    width: 100px;
-  }
+select {
+  height: 34px;
+  background: #fff;
+}
 
-  &.large {
-    width: 300px;
-  }
+textarea {
+  vertical-align: top;
+  height: calc(26px * 3);
 }

@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Elo7 Guideline</title>
+  <title>Elo7 Guideline (ver. Ueda 1.0.0)</title>
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
   <div class="wrapper">
+    <h1>
+      <img src="https://images.elo7.com.br/assets/v3/desktop/svg/logo-elo7.svg">
+      Guideline (ver.: Ueda 1.0.0)
+    </h1>
     <aside class="navigation">
       <nav>
         <a href="#headings">Headings</a>
@@ -27,18 +31,21 @@
         </nav>
         <a href="#form">Form</a>
         <nav>
-          <a href="#label">Label</a>
+          <a href="#label-small">Label</a>
           <nav>
+            <a href="#label-small">Small</a>
             <a href="#label">Normal</a>
-            <a href="#label-right">Right</a>
+            <a href="#label-large">Large</a>
             <a href="#label-full">Full</a>
+            <a href="#label-right">Right</a>
           </nav>
-          <a href="#input-small">Input</a>
+          <a href="#input-small">Form elements</a>
           <nav>
             <a href="#input-small">Small</a>
             <a href="#input">Normal</a>
             <a href="#input-large">Large</a>
             <a href="#input-full">Full</a>
+            <a href="#input-right">Right</a>
           </nav>
         </nav>
       </nav>
@@ -117,6 +124,13 @@
         <div class="how-to-use"><code></code></div>
       </section>
       <section id="form">
+        <div class="example" id="label-small">
+          <label>
+            <span class="small">Label small</span>
+            <input value="Teste" class="input">
+          </label>
+        </div>
+        <div class="how-to-use"><code></code></div>
         <div class="example" id="label">
           <label>
             <span>Label</span>
@@ -124,9 +138,9 @@
           </label>
         </div>
         <div class="how-to-use"><code></code></div>
-        <div class="example" id="label-right">
+        <div class="example" id="label-large">
           <label>
-            <span class="right">Label right</span>
+            <span class="large">Label large</span>
             <input value="Teste" class="input">
           </label>
         </div>
@@ -138,10 +152,24 @@
           </label>
         </div>
         <div class="how-to-use"><code></code></div>
+        <div class="example" id="label-right">
+          <label>
+            <span class="right">Label right</span>
+            <input value="Teste" class="input">
+          </label>
+        </div>
+        <div class="how-to-use"><code></code></div>
         <div class="example" id="input-small">
           <label>
             <span>Input small</span>
             <input value="Teste" class="input small">
+          </label>
+          <br><br>
+          <label>
+            <span>Select small</span>
+            <select class="small">
+              <option>Selecione</option>
+            </select>
           </label>
         </div>
         <div class="how-to-use"><code></code></div>
@@ -151,6 +179,20 @@
             <input value="Teste" class="input">
             <button class="btn primary">Botão padrão</button>
           </label>
+          <br><br>
+          <label>
+            <span>Select</span>
+            <select>
+              <option>Selecione</option>
+            </select>
+            <button class="btn primary">Botão padrão</button>
+          </label>
+          <br><br>
+          <label>
+            <span>Textarea</span>
+            <textarea>Lorem ipsum sit amet in dolllor</textarea>
+            <button class="btn primary">Botão padrão</button>
+          </label>
         </div>
         <div class="how-to-use"><code></code></div>
         <div class="example" id="input-large">
@@ -158,12 +200,55 @@
             <span>Input large</span>
             <input value="Teste" class="input large">
           </label>
+          <br><br>
+          <label>
+            <span>Select large</span>
+            <select class="large">
+              <option>Selecione</option>
+            </select>
+          </label>
+          <br><br>
+          <label>
+            <span>Textarea large</span>
+            <textarea class="large">Lorem ipsum sit amet in dolllor</textarea>
+          </label>
         </div>
         <div class="how-to-use"><code></code></div>
         <div class="example" id="input-full">
           <label>
             <span class="full">Input full</span>
             <input value="Teste" class="input full">
+          </label>
+          <br><br>
+          <label>
+            <span>Select full</span>
+            <select class="full">
+              <option>Selecione</option>
+            </select>
+          </label>
+          <br><br>
+          <label>
+            <span>Textarea full</span>
+            <textarea class="full">Lorem ipsum sit amet in dolllor</textarea>
+          </label>
+        </div>
+        <div class="how-to-use"><code></code></div>
+        <div class="example" id="input-right">
+          <label>
+            <span>Input right</span>
+            <input value="Teste" class="input right">
+          </label>
+          <br><br>
+          <label>
+            <span>Select right</span>
+            <select dir="rtl">
+              <option>Selecione</option>
+            </select>
+          </label>
+          <br><br>
+          <label>
+            <span>Textarea right</span>
+            <textarea class="right">Lorem ipsum sit amet in dolllor</textarea>
           </label>
         </div>
         <div class="how-to-use"><code></code></div>

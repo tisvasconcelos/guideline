@@ -1,5 +1,6 @@
 function escapeHtml(unsafe) {
   return unsafe
+    .replace('\n', "") //Remove o primeiro
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")

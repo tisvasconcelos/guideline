@@ -17,10 +17,14 @@ body {
   vertical-align: top;
 }
 
+h1 img {
+  vertical-align: text-bottom;
+  margin-right: 1em;
+}
+
 .main {
   width: 78%;
-  padding: 2em 0;
-  margin-left: 22%;
+  padding-bottom: 2em;
 
   section {
     margin-bottom: 2em;
@@ -46,6 +50,7 @@ body {
       display: inline-block;
       color: #7d7873;
       vertical-align: top;
+      line-height: 22px;
 
       p {
         margin: 0.4em 0;
@@ -56,9 +61,10 @@ body {
 
 .navigation {
   width: 20%;
-  margin-top: 1em;
+  max-width: 280px;
   font-size: 0.9rem;
-  position: fixed;
+  position: sticky;
+  top: 0;
 
   nav{
     > nav {
@@ -71,6 +77,6 @@ body {
 
   a {
     display: block;
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
 }
