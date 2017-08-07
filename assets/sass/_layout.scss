@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+html, body {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "museo_sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -177,5 +183,50 @@ select {
 
 textarea {
   vertical-align: top;
-  height: calc(26px * 3);
+  resize: vertical;
+  height: calc(26px * 3); //Line numbers
+}
+
+input[type=radio], input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+
+  + span:before {
+    content: "";
+    border: 2px solid #dadada;
+    background-color: #fff;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    vertical-align: text-bottom;
+    margin-right: 0.5rem;
+  }
+}
+
+input[type=radio] {
+  + span:before {
+    border-radius: 50%;
+  }
+
+  &:checked + span:before {
+    border-color: #359c9c;
+    background-color: #359c9c;
+    box-shadow: 0 0 0 0.2rem white inset;
+  }
+}
+
+input[type=checkbox] {
+  + span:before {
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  &:checked + span:before {
+    border-color: #359c9c;
+    background-color: #359c9c;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMTEgOCI+ICA8cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTIuMTEyOTAxNCw0LjExODEwOTQ4IEMxMS45NTUzMDkxLDMuOTYwNjMwMTcgMTEuNjk2ODMzMiwzLjk2MDYzMDE3IDExLjUzOTEzODIsNC4xMTgxMDk0OCBMNi40NTAwNTg1Miw5LjIwMDUzNjA1IEM2LjI5MjM2MzUyLDkuMzU4MDE1MzUgNi4wMzM5OTAyOCw5LjM1ODAxNTM1IDUuODc2Mjk1MjgsOS4yMDA1MzYwNSBMMy44NTg0NDM3MSw3LjEzODMyMzk1IEMzLjcwMDc0ODcxLDYuOTgwODQ0NjQgMy40NDIzNzU0Niw2Ljk4MDg0NDY0IDMuMjg0NjgwNDYsNy4xMzgzMjM5NSBMMi41MTU5MzAxOCw3LjkwNjQzMzExIEMyLjM1ODIzNTE3LDguMDYzOTEyNDEgMi4zNTgyMzUxNyw4LjMyMTkzMjI1IDIuNTE1OTMwMTgsOC40Nzk0MTE1NSBMNS44NzYyOTUyOCwxMS44ODE4OTA1IEM2LjAzMzk5MDI4LDEyLjAzOTM2OTggNi4yOTIzNjM1MiwxMi4wMzkzNjk4IDYuNDUwMDU4NTIsMTEuODgxODkwNSBMMTIuODgxNjUxNyw1LjQ1ODc4NjcyIEMxMy4wMzk0NDk0LDUuMzAxMjA0ODIgMTMuMDM5NDQ5NCw1LjA0MzI4NzU3IDEyLjg4MTY1MTcsNC44ODU3MDU2OCBMMTIuMTEyOTAxNCw0LjExODEwOTQ4IFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC00KSIvPjwvc3ZnPg==);
+  }
 }
